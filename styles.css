@@ -24,7 +24,7 @@ header {
   color: #fff;
 }
 
-h1 {
+#MyLogo {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -49,7 +49,7 @@ h1 {
   align-items: center;
 }
 
-h2 {
+h1 {
   color: #ff6b00;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -91,12 +91,13 @@ h2 {
   flex-direction: row;
   align-items: center;
   padding: 0;
+  list-style-type: none;
 }
 
-#socialMedia > figure {
+#socialMedia > li {
   padding: 10px;
 }
 
-#socialMedia > figure > img {
+#socialMedia img {
   width: 100%;
 }
