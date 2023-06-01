@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&display=swap');
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +11,8 @@ body {
   background-color: #1c1a19;
 }
 
-header, section {
+header,
+section {
   padding: 0 24px;
 }
 
@@ -21,11 +21,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 h1 {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -33,7 +33,7 @@ h1 {
 }
 
 .hamburgerBar {
-  background-color: #ACB7C3;
+  background-color: #acb7c3;
   width: 18px;
   height: 2px;
   border-radius: 1px;
@@ -48,9 +48,10 @@ h1 {
   justify-content: space-between;
   align-items: center;
 }
+
 h2 {
-  color: #FF6B00;
-  font-family: 'Crete Round';
+  color: #ff6b00;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -58,12 +59,12 @@ h2 {
 }
 
 #subtitle {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  color: #FFF5E1;
+  color: #fff5e1;
 }
 
 #intro {
@@ -77,8 +78,8 @@ h2 {
 }
 
 #introduction {
-  color: #FFFFFF;
-  font-family: 'Poppins';
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -89,13 +90,13 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
 }
 
-#socialMedia>figure {
+#socialMedia > figure {
   padding: 10px;
 }
 
-#socialMedia>figure>img {
+#socialMedia > figure > img {
   width: 100%;
 }
