@@ -103,10 +103,6 @@ h1 {
   padding: 10px;
 }
 
-.projectCard img {
-  position: absolute;
-}
-
 #socialMedia img {
   width: 100%;
 }
@@ -194,12 +190,32 @@ h1 {
 }
 
 .projectCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  height: 386px;
+  position: relative;
+}
+
+.cardIMG {
+  position: absolute;
+}
+
+.cardContent {
+  position: relative;
   padding: 0 13px;
 }
 
-.projectCard * {
-  position: relative;
+.cardContent li {
+  border: none;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.cardContent .projectButton {
+  margin: 22px -13px 0;
+}
+
+.projectCard,
+.cardContent,
+.cardIMG {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
