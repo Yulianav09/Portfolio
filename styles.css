@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Poppins&display=swap');
 
 * {
   box-sizing: border-box;
@@ -94,10 +94,112 @@ h1 {
   list-style-type: none;
 }
 
+.boxes > li {
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+}
+
 #socialMedia > li {
   padding: 10px;
 }
 
+.projectCard img {
+  position: absolute;
+}
+
 #socialMedia img {
   width: 100%;
+}
+
+#Works {
+  background-color: #fff;
+  padding-block: 120px;
+}
+
+#RecentWorks {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 83px;
+}
+
+#Works hr {
+  border: 0;
+  height: 1px;
+  background-color: #212121;
+  margin-top: 24px;
+  margin-bottom: 80px;
+}
+
+#cardsContainer {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+}
+
+.cardTitle {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  padding-top: 24px;
+}
+
+.textBlack {
+  color: #091e42;
+}
+
+.textWhite {
+  color: #fff
+}
+
+.cardDescription {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 12px;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  padding: 0;
+  margin-top: 12px;
+  list-style-type: none;
+  color: #091e42;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.projectButton {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 12px;
+  color: #fff;
+  margin-top: 12px;
+  background: #ff6b00;
+  border: none;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 13px;
+}
+
+.projectCard * {
+  position: relative;
 }
