@@ -148,7 +148,7 @@ h1 {
 }
 
 .textWhite {
-  color: #fff
+  color: #fff;
 }
 
 .cardDescription {
@@ -218,4 +218,111 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+#AboutMyself > h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  color: #ff6b00;
+  margin-top: 120px;
+}
+
+#AboutMyself > p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+}
+
+#AboutMyself > .projectButton {
+  margin-top: 0;
+}
+
+#AboutMyself hr {
+  border: 0;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 185px;
+  margin-bottom: 136.73px;
+  width: 100%;
+}
+
+#AboutMyself {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-block: 120px;
+  background-image: url("./src/Frame.svg");
+  background-repeat: no-repeat;
+  background-position: top 515px right;
+  align-items: flex-start;
+}
+
+#skillsContainer {
+  list-style-type: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 44px;
+}
+
+.skillSList {
+  list-style-type: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.skillSList > li:first-child {
+  display: list-item;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+#anguageBullet {
+  list-style-image: url('./src/rectangle.svg');
+  padding-left: 12px;
+}
+
+#frameworkBullet {
+  list-style-image: url('./src/square.svg');
+  padding-left: 12px;
+}
+
+#skillsBullet {
+  list-style-image: url('./src/circle.svg');
+  padding-left: 12px;
+}
+
+#ContactForm > h2 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  text-align: center;
+}
+
+#ContactForm {
+  background-color: #fff;
+  padding-top: 70px;
 }
