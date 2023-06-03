@@ -86,7 +86,7 @@ h1 {
   line-height: 24px;
 }
 
-#socialMedia {
+.socialMedia {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -99,11 +99,11 @@ h1 {
   border: 1px solid #8993a4;
 }
 
-#socialMedia > li {
+.socialMedia > li {
   padding: 10px;
 }
 
-#socialMedia img {
+.socialMedia img {
   width: 100%;
 }
 
@@ -325,4 +325,71 @@ h1 {
 #ContactForm {
   background-color: #fff;
   padding-top: 70px;
+  padding-bottom: 78px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 24px;
+  margin-top: 60px;
+}
+
+form > .projectButton {
+  align-self: center;
+}
+
+.styleForm {
+  border: none;
+  border-bottom: 1px solid #DBD8D7;
+  padding: 14px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.styleForm::placeholder {
+  color: #979493;
+}
+
+#message {
+  border: none;
+  background-color: #FBF8F7;
+  padding: 12px;
+  min-height: 114px;
+  min-width: 100%;
+  max-width: 100%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#message::placeholder {
+  color: #3C3A39;
+  font-style: italic;
+}
+
+footer {
+  background-color: #fff;
+  padding-top: 15px;
+  padding-bottom: 11px;
+  border-top: 1px solid #DFE1E6;
+}
+
+footer > .socialMedia {
+  justify-content: center;
+}
+
+footer > hr {
+  border: 0;
+  height: 5px;
+  background-color: #0D151E;
+  margin: 0 auto;
+  margin-top: 37px;
+  width: 134px;
+  border-radius: 5px;
 }
