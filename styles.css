@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Poppins&display=swap');
 
 * {
   box-sizing: border-box;
@@ -86,7 +86,7 @@ h1 {
   line-height: 24px;
 }
 
-#socialMedia {
+.socialMedia {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -94,10 +94,302 @@ h1 {
   list-style-type: none;
 }
 
-#socialMedia > li {
+.boxes > li {
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+}
+
+.socialMedia > li {
   padding: 10px;
 }
 
-#socialMedia img {
+.socialMedia img {
   width: 100%;
+}
+
+#Works {
+  background-color: #fff;
+  padding-block: 120px;
+}
+
+#RecentWorks {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 83px;
+}
+
+footer > hr {
+  border: 0;
+  height: 5px;
+  background-color: #0d151e;
+  margin: 0 auto;
+  margin-top: 37px;
+  width: 134px;
+  border-radius: 5px;
+}
+
+#Works hr {
+  border: 0;
+  height: 1px;
+  background-color: #212121;
+  margin-top: 24px;
+  margin-bottom: 80px;
+}
+
+#cardsContainer {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+}
+
+.cardTitle {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  padding-top: 24px;
+}
+
+.textBlack {
+  color: #091e42;
+}
+
+.textWhite {
+  color: #fff;
+}
+
+.cardDescription {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 12px;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  padding: 0;
+  margin-top: 12px;
+  list-style-type: none;
+  color: #091e42;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.projectButton {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 12px;
+  color: #fff;
+  margin-top: 12px;
+  background: #ff6b00;
+  border: none;
+}
+
+.projectCard {
+  height: 386px;
+  position: relative;
+}
+
+.cardIMG {
+  position: absolute;
+}
+
+.cardContent {
+  position: relative;
+  padding: 0 13px;
+}
+
+.cardContent li {
+  border: none;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+form > .projectButton {
+  align-self: center;
+}
+
+.cardContent .projectButton {
+  margin: 22px -13px 0;
+}
+
+.projectCard,
+.cardContent,
+.cardIMG {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#AboutMyself > h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  color: #ff6b00;
+  margin-top: 120px;
+}
+
+#AboutMyself > p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+}
+
+#AboutMyself > .projectButton {
+  margin-top: 0;
+}
+
+#AboutMyself hr {
+  border: 0;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 185px;
+  margin-bottom: 136.73px;
+  width: 100%;
+}
+
+#AboutMyself {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-block: 120px;
+  background-image: url("./src/Frame.svg");
+  background-repeat: no-repeat;
+  background-position: top 515px right;
+  align-items: flex-start;
+}
+
+#skillsContainer {
+  list-style-type: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 44px;
+}
+
+.skillSList {
+  list-style-type: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.skillSList > li:first-child {
+  display: list-item;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+#anguageBullet {
+  list-style-image: url('./src/rectangle.svg');
+  padding-left: 12px;
+}
+
+#frameworkBullet {
+  list-style-image: url('./src/square.svg');
+  padding-left: 12px;
+}
+
+#skillsBullet {
+  list-style-image: url('./src/circle.svg');
+  padding-left: 12px;
+}
+
+#ContactForm > h2 {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  text-align: center;
+}
+
+#ContactForm {
+  background-color: #fff;
+  padding-top: 70px;
+  padding-bottom: 78px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 24px;
+  margin-top: 60px;
+}
+
+.styleForm {
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  padding: 14px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.styleForm::placeholder {
+  color: #979493;
+}
+
+#message {
+  border: none;
+  background-color: #fbf8f7;
+  padding: 12px;
+  min-height: 114px;
+  min-width: 100%;
+  max-width: 100%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+#message::placeholder {
+  color: #3c3a39;
+  font-style: italic;
+}
+
+footer {
+  background-color: #fff;
+  padding-top: 15px;
+  padding-bottom: 11px;
+  border-top: 1px solid #dfe1e6;
+}
+
+footer > .socialMedia {
+  justify-content: center;
 }
