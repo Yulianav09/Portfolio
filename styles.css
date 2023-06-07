@@ -77,6 +77,12 @@ h1 {
   background-position: bottom -19% right;
 }
 
+#intro > article {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 #introduction {
   color: #fff;
   font-family: 'Poppins', sans-serif;
@@ -101,6 +107,7 @@ h1 {
 
 .socialMedia > li {
   padding: 10px;
+  width: 40px;
 }
 
 .socialMedia img {
@@ -410,6 +417,81 @@ footer > .socialMedia {
   justify-content: center;
 }
 
+.onlyDesktop {
+  visibility: hidden;
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
+  .onlyMobile {
+    visibility: hidden;
+    display: none !important;
+  }
+
+  .onlyDesktop {
+    visibility: visible;
+    display: initial;
+  }
+
+  .navigationLinks {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .navigationLinks a {
+    text-decoration: none;
+    color: #dfe1e6;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  header {
+    padding: 26px 151px 26px 154px;
+  }
+
+  .socialMedia {
+    flex-direction: column;
+    order: -1;
+  }
+
+  #intro {
+    flex-direction: row;
+    align-items: center;
+    padding-block-start: 192px;
+    padding-block-end: 251px;
+    background-image: url("./src/Illustration-header\ portfolio\ desktop\ version.svg");
+    background-position: bottom -1% right;
+  }
+
+  #intro > article {
+    width: 566px;
+    padding-left: 65px;
+  }
+
+  h1 {
+    font-size: 72px;
+    line-height: 82px;
+    color: #F55800;
+  }
+
+  #subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF;
+  }
+
+  #introduction {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    color: #F4F5F7;
+  }
   
 }
