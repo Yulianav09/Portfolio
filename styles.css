@@ -199,6 +199,26 @@ footer > hr {
   border: none;
 }
 
+form > .projectButton {
+  align-self: center;
+}
+
+.projectButton:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.projectButton:active {
+  color: #f4f1f0;
+  background: #e05304;
+}
+
+.projectButton:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+}
+
 .projectCard {
   height: 386px;
   position: relative;
@@ -216,10 +236,6 @@ footer > hr {
 .cardContent li {
   border: none;
   background: rgba(255, 255, 255, 0.24);
-}
-
-form > .projectButton {
-  align-self: center;
 }
 
 .cardContent .projectButton {
