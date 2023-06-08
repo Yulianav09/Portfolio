@@ -229,10 +229,13 @@ form > .projectButton {
 .projectCard {
   height: 386px;
   position: relative;
+  max-width: 327px;
+  margin: 0 auto;
 }
 
 .cardIMG {
   position: absolute;
+  width: 100%;
 }
 
 .cardContent {
@@ -422,7 +425,20 @@ footer > .socialMedia {
   display: none;
 }
 
+#imgWorks1 img {
+  width: 100%;
+}
+
+#worksHeader {
+  text-align: center;
+}
+
 @media only screen and (min-width: 768px) {
+  .projectCard {
+    height: 435px;
+    max-width: 369px;
+  }
+
   .onlyMobile {
     visibility: hidden;
     display: none !important;
@@ -476,7 +492,7 @@ footer > .socialMedia {
   h1 {
     font-size: 72px;
     line-height: 82px;
-    color: #F55800;
+    color: #f55800;
   }
 
   #subtitle {
@@ -484,14 +500,79 @@ footer > .socialMedia {
     font-weight: 500;
     font-size: 32px;
     line-height: 44px;
-    color: #FFFFFF;
+    color: #fff;
   }
 
   #introduction {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     line-height: 32px;
-    color: #F4F5F7;
+    color: #f4f5f7;
   }
-  
+
+  #RecentWorks {
+    line-height: 52px;
+    flex-grow: 0;
+  }
+
+  #worksHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  #worksHeader > hr {
+    flex-grow: 1;
+  }
+
+  #cardsContainer {
+    gap: 24px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #cardsContainer > article:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  #imgWorks1 {
+    flex-shrink: 3;
+    width: 100%;
+  }
+
+  #Multi-PostStories {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-shrink: 4;
+    gap: 12px;
+  }
+
+  .cardTitle {
+    padding-top: 0;
+  }
+
+  section {
+    padding: 0 141px;
+  }
+
+  .cardDescription {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  #cardsContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #cardsContainer > article:first-child {
+    grid-column-end: 4;
+  }
 }
