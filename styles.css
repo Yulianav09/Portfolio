@@ -573,7 +573,7 @@ footer > .socialMedia {
 
   #AboutMyself > h2 {
     line-height: 82px;
-    color: #F55800;
+    color: #f55800;
   }
 
   #AboutMyself > p {
@@ -585,7 +585,7 @@ footer > .socialMedia {
   #AboutMyself > .projectButton {
     margin-top: 24px;
   }
-  }
+}
 
 @media only screen and (min-width: 1300px) {
   #cardsContainer {
