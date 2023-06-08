@@ -152,11 +152,11 @@ footer > hr {
 }
 
 #imgWorks1 {
-  transition: all 2s ease-out forwards;
+  transition: transform 0.2s ease-out;
 }
 
 #imgWorks1:hover {
-  transform: scale(1.5, 1.5);
+  transform: scale(1.02);
 }
 
 .cardTitle {
@@ -212,7 +212,7 @@ footer > hr {
   margin-top: 12px;
   background: #ff6b00;
   border: none;
-  transition: all 2s;
+  transition: all 0.7s;
 }
 
 form > .projectButton {
