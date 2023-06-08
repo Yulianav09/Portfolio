@@ -565,7 +565,27 @@ footer > .socialMedia {
     font-size: 20px;
     line-height: 28px;
   }
-}
+
+  #AboutMyself {
+    background-image: url("./src/Illustration-header\ portfolio\ desktop\ version.svg");
+    background-position: bottom 100% right;
+  }
+
+  #AboutMyself > h2 {
+    line-height: 82px;
+    color: #F55800;
+  }
+
+  #AboutMyself > p {
+    max-width: 566px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  #AboutMyself > .projectButton {
+    margin-top: 24px;
+  }
+  }
 
 @media only screen and (min-width: 1300px) {
   #cardsContainer {
