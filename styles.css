@@ -622,6 +622,10 @@ footer > .socialMedia {
     line-height: 32px;
   }
 
+  form > .projectButton {
+    align-self: flex-start;
+  }
+
   .cardContent .projectButton {
     height: 0;
     line-height: 0;
