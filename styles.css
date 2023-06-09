@@ -255,6 +255,8 @@ form > .projectButton {
 .cardContent {
   position: relative;
   padding: 0 13px;
+  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);
+  height: 100%;
 }
 
 .cardContent li {
@@ -620,6 +622,22 @@ footer > .socialMedia {
     line-height: 32px;
   }
 
+  .cardContent .projectButton {
+    height: 0;
+    line-height: 0;
+    padding: 0;
+    visibility: hidden;
+    font-size: 0;
+  }
+
+  .projectCard:hover .projectButton {
+    height: initial !important;
+    visibility: visible !important;
+    font-size: 17px !important;
+    line-height: 24px !important;
+    padding: 12px !important;
+  }
+
   #AboutMyself > .projectButton {
     margin-top: 24px;
   }
@@ -649,6 +667,16 @@ footer > .socialMedia {
 
   #ContactForm > form {
     margin-top: 0;
+  }
+
+  .projectCard:hover .cardTitle,
+  .projectCard:hover .cardDescription,
+  .projectCard:hover .boxes {
+    visibility: hidden;
+  }
+
+  .projectCard:hover .cardContent {
+    background: none;
   }
 }
 
