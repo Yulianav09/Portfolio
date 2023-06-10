@@ -16,6 +16,10 @@ section {
   padding: 0 24px;
 }
 
+section {
+  padding-block: 120px;
+}
+
 header {
   background: #3c3a39;
   display: flex;
@@ -30,6 +34,8 @@ header {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  animation: mover 0.5s forwards;
+  -webkit-animation: mover 0.5s forwards;
 }
 
 .hamburgerBar {
@@ -71,10 +77,15 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding-block: 120px;
   background-image: url("./src/illustration-header-mobile.png");
   background-repeat: no-repeat;
   background-position: bottom -19% right;
+}
+
+#intro > article {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 #introduction {
@@ -101,6 +112,7 @@ h1 {
 
 .socialMedia > li {
   padding: 10px;
+  width: 40px;
 }
 
 .socialMedia img {
@@ -109,7 +121,6 @@ h1 {
 
 #Works {
   background-color: #fff;
-  padding-block: 120px;
 }
 
 #RecentWorks {
@@ -144,6 +155,14 @@ footer > hr {
   grid-template-columns: 1fr;
 }
 
+#imgWorks1 {
+  transition: transform 0.2s ease-out;
+}
+
+#imgWorks1:hover {
+  transform: scale(1.02);
+}
+
 .cardTitle {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -173,6 +192,7 @@ footer > hr {
 .boxes {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 12px;
   align-items: center;
   padding: 0;
@@ -197,6 +217,7 @@ footer > hr {
   margin-top: 12px;
   background: #ff6b00;
   border: none;
+  transition: all 0.7s;
 }
 
 form > .projectButton {
@@ -222,15 +243,20 @@ form > .projectButton {
 .projectCard {
   height: 386px;
   position: relative;
+  max-width: 327px;
+  margin: 0 auto;
 }
 
 .cardIMG {
   position: absolute;
+  width: 100%;
 }
 
 .cardContent {
   position: relative;
   padding: 0 13px;
+  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);
+  height: 100%;
 }
 
 .cardContent li {
@@ -286,10 +312,9 @@ form > .projectButton {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding-block: 120px;
   background-image: url("./src/Frame.svg");
   background-repeat: no-repeat;
-  background-position: top 515px right;
+  background-position: top calc(625px - 30vw) right;
   align-items: flex-start;
 }
 
@@ -325,21 +350,23 @@ form > .projectButton {
   display: list-item;
   font-size: 32px;
   font-weight: 700;
+  list-style-position: inside;
 }
 
-#anguageBullet {
-  list-style-image: url('./src/rectangle.svg');
+.skillSList > li:first-child span {
   padding-left: 12px;
+}
+
+#languageBullet {
+  list-style-image: url('./src/rectangle.svg');
 }
 
 #frameworkBullet {
   list-style-image: url('./src/square.svg');
-  padding-left: 12px;
 }
 
 #skillsBullet {
   list-style-image: url('./src/circle.svg');
-  padding-left: 12px;
 }
 
 #ContactForm > h2 {
@@ -408,4 +435,269 @@ footer {
 
 footer > .socialMedia {
   justify-content: center;
+  flex-direction: row;
+}
+
+.onlyDesktop {
+  visibility: hidden;
+  display: none;
+}
+
+#imgWorks1 img {
+  width: 100%;
+}
+
+#worksHeader {
+  text-align: center;
+}
+
+@keyframes mover {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .projectCard {
+    height: 435px;
+    max-width: 369px;
+  }
+
+  .onlyMobile {
+    visibility: hidden;
+    display: none !important;
+  }
+
+  .onlyDesktop {
+    visibility: visible;
+    display: initial;
+  }
+
+  .navigationLinks {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .navigationLinks a {
+    text-decoration: none;
+    color: #dfe1e6;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  header {
+    padding: 26px 151px 26px 154px;
+  }
+
+  .socialMedia {
+    flex-direction: column;
+    order: -1;
+  }
+
+  #intro {
+    flex-direction: row;
+    align-items: center;
+    padding-block: 192px 251px;
+    padding-inline: 26px;
+    background-image: url("./src/Illustration-header\ portfolio\ desktop\ version.svg");
+    background-position: bottom -1% right calc(100% - 640px);
+  }
+
+  #intro > article {
+    width: 566px;
+    padding-left: 65px;
+  }
+
+  h1 {
+    font-size: 72px;
+    line-height: 82px;
+    color: #f55800;
+  }
+
+  #subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+  }
+
+  #introduction {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    color: #f4f5f7;
+  }
+
+  #RecentWorks {
+    line-height: 52px;
+    flex-grow: 0;
+  }
+
+  #worksHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  #worksHeader > hr {
+    flex-grow: 1;
+  }
+
+  #cardsContainer {
+    gap: 24px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #cardsContainer > article:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 24px;
+  }
+
+  #imgWorks1 {
+    width: 100%;
+  }
+
+  #Multi-PostStories {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .cardTitle {
+    padding-top: 0;
+  }
+
+  section {
+    padding: 130px 141px;
+  }
+
+  .cardDescription {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  #AboutMyself {
+    background-image: url("./src/illustration-about\ me.svg");
+    background-position: top 100px right calc(100% - 715px);
+  }
+
+  #AboutMyself > h2 {
+    line-height: 82px;
+    color: #f55800;
+    margin-top: 0;
+  }
+
+  #AboutMyself hr {
+    margin-top: 115px;
+    margin-bottom: 122px;
+  }
+
+  #AboutMyself > p {
+    max-width: 566px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  form > .projectButton {
+    align-self: flex-start;
+  }
+
+  .cardContent .projectButton {
+    height: 0;
+    line-height: 0;
+    padding: 0;
+    visibility: hidden;
+    font-size: 0;
+  }
+
+  .projectCard:hover .projectButton {
+    height: initial !important;
+    visibility: visible !important;
+    font-size: 17px !important;
+    line-height: 24px !important;
+    padding: 12px !important;
+  }
+
+  #AboutMyself > .projectButton {
+    margin-top: 24px;
+  }
+
+  #skillsContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .skillSList {
+    align-items: flex-start;
+  }
+
+  #ContactForm {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding-block: 130px 228px;
+    gap: 24px;
+  }
+
+  #ContactForm > h2 {
+    font-size: 40px;
+    line-height: 52px;
+    text-align: left;
+  }
+
+  #ContactForm > form {
+    margin-top: 0;
+  }
+
+  .projectCard:hover .cardTitle,
+  .projectCard:hover .cardDescription,
+  .projectCard:hover .boxes {
+    visibility: hidden;
+  }
+
+  .projectCard:hover .cardContent {
+    background: none;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  #cardsContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #cardsContainer > article:first-child {
+    grid-column-end: 4;
+  }
+
+  #intro {
+    background-position: bottom -1% right;
+  }
+
+  #AboutMyself {
+    background-position: top 100px right;
+  }
 }

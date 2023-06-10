@@ -11,63 +11,82 @@
   <header>
     <div id="MyLogo">My logo</div>
     <nav>
-    <div id="hamburgerContainer">
+    <div  class="onlyMobile" id="hamburgerContainer">
       <div class="hamburgerBar">&nbsp;</div>
       <div class="hamburgerBar">&nbsp;</div>
       <div class="hamburgerBar">&nbsp;</div>
     </div>
+    <ul class="onlyDesktop navigationLinks">
+      <li>
+      <a href="#">Portfolio</a>
+      </li>
+      <li>        
+      <a href="#">About</a>
+      </li>
+      <li>          
+      <a href="#">Contact</a>
+      </li>
+      <li>          
+        <a href="#"><img src="./src/Icon Email.svg" alt="Email icon"></a>
+      </li>
+    </ul>
     </nav>
   </header>
   <main>
     <section id="intro">
-      <h1>
-        Hey There.
-        I’m Yuliana.
-      </h1>
-      <p id="subtitle">I'm a Software Developer</p>
-      <p id="introduction">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
-        don’t hesitate to contact me.</p>
+      <article>
+        <h1>
+          Hey There.<br>
+          I’m Yuliana.
+        </h1>
+        <p id="subtitle">I'm a Software Developer</p>
+        <p id="introduction">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
+          don’t hesitate to contact me.</p>
+        </article>
 
-        <ul class="socialMedia">
-          <li>
-          <a href="https://github.com/Yulianav09"><img src="./src/github.svg" alt="Github icon"></a>
-          </li>
-          <li>        
-          <a href="https://www.linkedin.com/in/yuliana-velez-rodriguez/"><img src="./src/Linkedin icon.svg" alt="Linkedin icon"></a>
-          </li>
-          <li>          
-          <a href="https://www.angellist.com/"><img src="./src/angel list.svg" alt="Angel list icon"></a>
-          </li>
-          <li>          
-          <a href="https://twitter.com/YulianaVel09"><img src="./src/twitter.svg" alt="twitter icon"></a>
-          </li>
-          <li>          
-          <a href="https://medium.com/"><img src="./src/medium.svg" alt="Medium icon"></a>
-          </li>
-        </ul>
+      <ul class="socialMedia">
+        <li>
+        <a href="https://github.com/Yulianav09"><img src="./src/github.svg" alt="Github icon"></a>
+        </li>
+        <li>        
+        <a href="https://www.linkedin.com/in/yuliana-velez-rodriguez/"><img src="./src/Linkedin icon.svg" alt="Linkedin icon"></a>
+        </li>
+        <li>          
+        <a href="https://www.angellist.com/"><img src="./src/angel list.svg" alt="Angel list icon"></a>
+        </li>
+        <li>          
+        <a href="https://twitter.com/YulianaVel09"><img src="./src/twitter.svg" alt="twitter icon"></a>
+        </li>
+        <li>          
+        <a href="https://medium.com/"><img src="./src/medium.svg" alt="Medium icon"></a>
+        </li>
+      </ul>
     </section>
 
     <section id="Works">
-      <h2 id="RecentWorks">My Recent Works</h2>
-      <hr>
+      <div id="worksHeader">
+        <h2 id="RecentWorks">My Recent Works</h2>
+        <hr>
+      </div>
       <div id="cardsContainer">
         <article>
-          <img src="./src/Img Placeholder works.png" alt="Img Works 1">
-          <h3 class="cardTitle textBlack">Multi-Post Stories</h3>
-          <p class="cardDescription textBlack">A daily selection of privately personalized reads; no accounts or sign-ups required.
-             has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
-          </p>
-          <ul class="boxes">
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>Bootstrap</li>
-            <li>Ruby</li>
-          </ul>
-          <button class="projectButton">See project</button>
+          <div id="imgWorks1"><img src="./src/Img Placeholder works.png" alt="Img Works 1"></div>
+          <div id="Multi-PostStories"><h3 class="cardTitle textBlack">Multi-Post Stories</h3>
+            <p class="cardDescription textBlack">A daily selection of privately personalized reads; no accounts or sign-ups required.
+              has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+            </p>
+            <ul class="boxes">
+              <li>CSS</li>
+              <li>HTML</li>
+              <li>Bootstrap</li>
+              <li>Ruby</li>
+            </ul>
+            <button class="projectButton">See project</button>
+          </div>
         </article>
         <!-- Cards section -->
         <article class="projectCard">
-          <div class="cardIMG"><img src="./src/Img Placeholder works 2.png" alt="Img Works 2"></div>
+          <div class="cardIMG"><img src="./src/Mask Group img.svg" alt="Img Works 2"></div>
           <div class="cardContent">
             <h3 class="cardTitle textWhite">Profesional Art Printing Data</h3>
             <p class="cardDescription textWhite">A daily selection of privately personalized reads; no accounts or sign-ups required.
@@ -82,7 +101,7 @@
           </div>
         </article>
         <article class="projectCard">
-          <div class="cardIMG"><img src="./src/Img Placeholder works 2.png" alt="Img Works 2"></div>
+          <div class="cardIMG"><img src="./src/Mask Group img.svg" alt="Img Works 2"></div>
           <div class="cardContent">
             <h3 class="cardTitle textWhite">Profesional Art Printing Data</h3>
             <p class="cardDescription textWhite">A daily selection of privately personalized reads; no accounts or sign-ups required.
@@ -97,7 +116,7 @@
           </div>
         </article>
         <article class="projectCard">
-          <div class="cardIMG"><img src="./src/Img Placeholder works 2.png" alt="Img Works 2"></div>
+          <div class="cardIMG"><img src="./src/Mask Group img.svg" alt="Img Works 2"></div>
           <div class="cardContent">
             <h3 class="cardTitle textWhite">Profesional Art Printing Data</h3>
             <p class="cardDescription textWhite">A daily selection of privately personalized reads; no accounts or sign-ups required.
@@ -112,7 +131,7 @@
           </div>
         </article>
         <article class="projectCard">
-          <div class="cardIMG"><img src="./src/Img Placeholder works 2.png" alt="Img Works 2"></div>
+          <div class="cardIMG"><img src="./src/Mask Group img.svg" alt="Img Works 2"></div>
           <div class="cardContent">
             <h3 class="cardTitle textWhite">Profesional Art Printing Data</h3>
             <p class="cardDescription textWhite">A daily selection of privately personalized reads; no accounts or sign-ups required.
@@ -127,7 +146,7 @@
           </div>
         </article>
         <article class="projectCard">
-          <div class="cardIMG"><img src="./src/Img Placeholder works 2.png" alt="Img Works 2"></div>
+          <div class="cardIMG"><img src="./src/Mask Group img.svg" alt="Img Works 2"></div>
           <div class="cardContent">
             <h3 class="cardTitle textWhite">Profesional Art Printing Data</h3>
             <p class="cardDescription textWhite">A daily selection of privately personalized reads; no accounts or sign-ups required.
@@ -142,7 +161,7 @@
           </div>
         </article>
         <article class="projectCard">
-          <div class="cardIMG"><img src="./src/Img Placeholder works 2.png" alt="Img Works 2"></div>
+          <div class="cardIMG"><img src="./src/Mask Group img.svg" alt="Img Works 2"></div>
           <div class="cardContent">
             <h3 class="cardTitle textWhite">Profesional Art Printing Data</h3>
             <p class="cardDescription textWhite">A daily selection of privately personalized reads; no accounts or sign-ups required.
@@ -170,7 +189,7 @@
          <ul id="skillsContainer">
           <li>
             <ul class="skillSList">
-              <li id="anguageBullet">Language</li>
+              <li id="languageBullet"><span>Language</span></li>
               <li>JavaScript</li>
               <li>Ruby</li>
               <li>HTML</li>
@@ -179,7 +198,7 @@
           </li>
           <li>
             <ul class="skillSList">
-              <li id="frameworkBullet">Frameworks</li>
+              <li id="frameworkBullet"><span>Frameworks</span></li>
               <li>React.js</li>
               <li>Ruby on Rails</li>
               <li>RSpec</li>
@@ -188,7 +207,7 @@
           </li>
           <li>
             <ul class="skillSList">
-              <li id="skillsBullet">Skills</li>
+              <li id="skillsBullet"><span>Skills</span></li>
               <li>Database Management</li>
               <li>Version Control</li>
               <li>CLI</li>
@@ -228,7 +247,7 @@
       <a href="https://medium.com/"><img src="./src/MediumDark.svg" alt="Medium icon"></a>
       </li>
     </ul>
-    <hr>
+    <hr class="onlyMobile">
 </footer>
 </body>
 </html>
