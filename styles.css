@@ -53,6 +53,15 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 h1 {
@@ -451,6 +460,35 @@ footer > .socialMedia {
   text-align: center;
 }
 
+.navigationLinks {
+  list-style-type: none;
+}
+
+.navigationLinks a {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #FFF5E1;
+}
+
+.navigationLinks li {
+  border-bottom: 1px solid #6F6C6B;
+  padding: 15px;
+}
+
+.navMobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: grey;
+  padding: 20px;
+}
+
 @keyframes mover {
   0% {
     transform: rotate(0deg);
@@ -500,6 +538,10 @@ footer > .socialMedia {
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
+  }
+
+  .navigationLinks li {
+    border-bottom: none;
   }
 
   header {
