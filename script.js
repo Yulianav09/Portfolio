@@ -22,3 +22,14 @@
       closebutton.classList.add("hidden")
     }
   });
+
+  function closewindow() {
+    nav.classList.remove("navMobile")
+      navigationLinks.classList.add("onlyDesktop")
+      for (let i=0; i< hamburgerBar.length; i++) {
+        hamburgerBar[i].classList.remove("hidden")
+      }
+    closebutton.classList.add("hidden");
+  }
+
+  navigationLinks.addEventListener('click', closewindow);
