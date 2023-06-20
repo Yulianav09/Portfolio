@@ -28,6 +28,7 @@ header {
   color: #fff;
   position: fixed;
   width: 100%;
+  z-index: 100;
 }
 
 #MyLogo {
@@ -494,6 +495,12 @@ footer > .socialMedia {
   background: #3c3a39;
   padding: 20px;
   transition: all 0.7s;
+}
+
+#closebutton {
+  position: fixed;
+  top: 35px;
+  right: 35px;
 }
 
 @keyframes mover {
