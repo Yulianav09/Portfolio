@@ -358,6 +358,11 @@ form > .projectButton {
   gap: 32px;
 }
 
+.navigationLinks li {
+  border-bottom: 1px solid #6f6c6b;
+  padding: 15px;
+}
+
 .skillSList > li:first-child {
   display: list-item;
   font-size: 32px;
@@ -474,16 +479,11 @@ footer > .socialMedia {
   font-weight: 700;
   font-size: 32px;
   line-height: 32px;
-  color: #FFF5E1;
+  color: #fff5e1;
 }
 
 .navigationLinks a:hover {
   color: #ffb116;
-}
-
-.navigationLinks li {
-  border-bottom: 1px solid #6F6C6B;
-  padding: 15px;
 }
 
 .navMobile {
