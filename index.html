@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script defer src="script.js"></script>
   <link rel="stylesheet" href="styles.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,18 +16,20 @@
       <div class="hamburgerBar">&nbsp;</div>
       <div class="hamburgerBar">&nbsp;</div>
       <div class="hamburgerBar">&nbsp;</div>
+      <div id="closebutton" class="hidden"><img src="./src/Icon - Cancel.svg" alt="close button"></div>
     </div>
     <ul class="onlyDesktop navigationLinks">
+    <!-- <ul class="navigationLinks"> -->
       <li>
-      <a href="#">Portfolio</a>
+      <a href="#Works">Portfolio</a>
       </li>
       <li>        
-      <a href="#">About</a>
+      <a href="#AboutMyself">About</a>
       </li>
       <li>          
-      <a href="#">Contact</a>
+      <a href="#ContactForm">Contact</a>
       </li>
-      <li>          
+      <li class="onlyDesktop">          
         <a href="#"><img src="./src/Icon Email.svg" alt="Email icon"></a>
       </li>
     </ul>
