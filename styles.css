@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: #1c1a19;
 }
@@ -57,14 +61,80 @@ header {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  transition: transform 200ms linear;
+}
+
+#hamburgerContainer:hover {
+  transform: rotate(90deg);
+}
+
+.blockScroll {
+  overflow-y: hidden;
+}
+
+.socialMedia img {
+  width: 100%;
+}
+
+#close img {
+  color: #dbd8d7;
+  transition: none;
+  transform: none;
+}
+
+#modalHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#modalTecnologies {
+  margin-top: 42px;
+}
+
+.modaltitle {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.modalContainer {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  z-index: 101;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  padding: 60px 16px 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.modal {
+  display: grid;
+  row-gap: 12px;
+  background-color: #fff;
+  max-width: 1000px;
+  margin-inline: auto;
+  padding: 16px;
+}
+
+#modalContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-content: space-between;
 }
 
 .hidden {
   display: none;
-}
-
-.show {
-  display: block;
 }
 
 h1 {
@@ -125,10 +195,6 @@ h1 {
 .socialMedia > li {
   padding: 10px;
   width: 40px;
-}
-
-.socialMedia img {
-  width: 100%;
 }
 
 #Works {
@@ -460,6 +526,11 @@ footer > .socialMedia {
   display: none;
 }
 
+#snapshoot {
+  width: 100%;
+  height: 100%;
+}
+
 #imgWorks1 img {
   width: 100%;
 }
@@ -503,6 +574,30 @@ footer > .socialMedia {
   right: 35px;
 }
 
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.formControl small {
+  visibility: hidden;
+  color: red;
+}
+
+.error small {
+  visibility: visible;
+}
+
+.formControl {
+  display: grid;
+  justify-content: center;
+}
+
+.icons {
+  display: flex;
+  gap: 12px;
+}
+
 @keyframes mover {
   0% {
     transform: rotate(0deg);
@@ -522,6 +617,33 @@ footer > .socialMedia {
 }
 
 @media only screen and (min-width: 768px) {
+  .modalContainer {
+    padding: 10%;
+  }
+
+  .modal {
+    grid-template-columns: repeat(10, 1fr);
+    column-gap: 25px;
+  }
+
+  #modalHeading {
+    grid-column: 1 /span 10;
+  }
+
+  #modalTecnologies {
+    grid-column: 1 /span 10;
+    margin-top: 0;
+    margin-bottom: 28px;
+  }
+
+  #modalSnapshot {
+    grid-column: 1 /span 6;
+  }
+
+  #modalContent {
+    grid-column: 7 /span 4;
+  }
+
   .projectCard {
     height: 435px;
     max-width: 369px;
@@ -737,6 +859,10 @@ footer > .socialMedia {
 
   .projectCard:hover .cardContent {
     background: none;
+  }
+
+  .formControl {
+    justify-content: start;
   }
 }
 
