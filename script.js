@@ -182,8 +182,13 @@ const emailValue = email.value.trim();
 
 
 if (emailValue !== emailValue.toLowerCase()) {
-  formControl.classList.add('error');
-} else{
-  formControl.classList.remove('error');
+    formControl.classList.add('error');
+  } else{
+    formControl.classList.remove('error');
+  }
 }
-}
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  checkInputs();
+});
