@@ -192,3 +192,5 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   checkInputs();
 });
+
+//  local storage
