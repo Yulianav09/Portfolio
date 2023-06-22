@@ -182,17 +182,16 @@ function checkInputs() {
 
   if (emailValue !== emailValue.toLowerCase()) {
     formControl.classList.add('error');
-    return false
-  } else {
-    formControl.classList.remove('error');
-    return true
+    return false;
   }
+  formControl.classList.remove('error');
+  return true;
 }
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  let isValid = checkInputs();
+  const isValid = checkInputs();
   if (isValid) {
-    form.submit()
+    form.submit();
   }
 });
