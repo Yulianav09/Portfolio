@@ -65,9 +65,9 @@ const liveDemo = document.querySelector('#liveDemo');
 const source = document.querySelector('#source');
 const modaltitle = document.querySelector('.modaltitle');
 const snapshoot = document.querySelector('#snapshoot');
+const body = document.querySelector('body')
 
 for (let i = 0; i < projects.length; i += 1) {
-  console.log(i);
   const projectCard = document.createElement('article');
   projectCard.classList.add('projectCard');
 
@@ -101,6 +101,7 @@ for (let i = 0; i < projects.length; i += 1) {
     liveDemo.href = projects[i].liveDemo
     source.href = projects[i].projectURL
     snapshoot.src = projects[i].featureImage
+    body.classList.add('blockScroll')
   });
 }
 hamburgerContainer.addEventListener('click', () => {
@@ -133,7 +134,6 @@ function closewindow() {
 navigationLinks.addEventListener('click', closewindow);
 
 for (let i = 0; i < projects.length; i += 1) {
-  console.log(i);
   const projectCard = document.createElement('article');
   projectCard.classList.add('projectCard');
   const cardIMG = document.createElement('div');
@@ -165,9 +165,38 @@ open.addEventListener('click', () => {
     liveDemo.href = 'https://yulianav09.github.io/Portfolio/'
     source.href = 'https://github.com/Yulianav09/Portfolio'
     snapshoot.src = './src/Img Placeholder works.png'
+    body.classList.add('blockScroll')
   });
 
 closex.addEventListener('click', () => {
   modalContainer.classList.remove('show');
+  body.classList.remove('blockScroll')
 });
 
+saveLocalStorage();
+
+getLocalStorage();
+
+function getLocalStorage() {
+
+  if(localStorage.getItem("formData")){
+    // exist the name in local storag
+    let formData =  JSON.parse(localStorage.getItem("formData"));
+    //console.log(formData);
+
+  }else{
+    console.log("there is no entryes for local storage");
+  }
+}
+
+function saveLocalStorage() {
+
+let formData = {
+  name: "Full name",
+  email: "Email address",
+  message: "Write me something...",
+};
+
+localStorage.setItem( "formData", JSON.stringify( formData ) );
+
+}
