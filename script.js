@@ -172,31 +172,3 @@ closex.addEventListener('click', () => {
   modalContainer.classList.remove('show');
   body.classList.remove('blockScroll')
 });
-
-saveLocalStorage();
-
-getLocalStorage();
-
-function getLocalStorage() {
-
-  if(localStorage.getItem("formData")){
-    // exist the name in local storag
-    let formData =  JSON.parse(localStorage.getItem("formData"));
-    //console.log(formData);
-
-  }else{
-    console.log("there is no entryes for local storage");
-  }
-}
-
-function saveLocalStorage() {
-
-let formData = {
-  name: "Full name",
-  email: "Email address",
-  message: "Write me something...",
-};
-
-localStorage.setItem( "formData", JSON.stringify( formData ) );
-
-}
