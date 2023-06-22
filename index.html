@@ -9,6 +9,26 @@
   <title>Portfolio Yuliana</title>
 </head>
 <body>
+  <!-- modal window -->
+
+    <div class="modalContainer" id="modal_container">
+      <article class="modal">
+        <h3 class="modaltitle">Keeping track of hundreds  of components website</h3>
+        <ul id="modalTecnologies" class="boxes">
+          <li>HTML</li>
+          <li>Bootstrap</li>
+          <li>Ruby on rails</li>
+        </ul>
+        <div><img id="snapshoot" src="./src/Snapshoot Portfolio.png" alt="Snapshoot image"></div>
+          <p id="modalDescription" class="cardDescription textBlack">A daily selection of privately personalized reads; no accounts or sign-ups required.
+           has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.
+          </p>
+          <a target="_blank" id="liveDemo" href=""><button class="projectButton icons"><span>See live</span><img src="./src/Icon - Export.svg" alt=""></button></a>
+          <a target="_blank" id="source" href=""><button class="projectButton icons"><span>See source</span><img src="./src/Icon -GitHub.svg" alt=""></button></a>
+          <div id="close" class="closex"><img src="./src/Icon - Cancel.svg" alt="close modal window"></div>
+      </article>
+    </div>
+    
   <header>
     <div id="MyLogo">My logo</div>
     <nav>
@@ -84,11 +104,12 @@
               <li>Bootstrap</li>
               <li>Ruby</li>
             </ul>
-            <button class="projectButton">See project</button>
+            <button class="projectButton open">See project</button>
           </div>
         </article>
         <!-- Cards section -->
-        <article class="projectCard">
+        <!-- 
+          <article class="projectCard">
           <div class="cardIMG"><img src="./src/Mask Group img.svg" alt="Project 2"></div>
           <div class="cardContent">
             <h3 class="cardTitle textWhite">Profesional Art Printing Data</h3>
@@ -100,7 +121,7 @@
               <li class="textWhite">Bootstrap</li>
               <li class="textWhite">Ruby</li>
             </ul>
-            <button class="projectButton">See project</button>
+            <button class="projectButton open">See project</button>
           </div>
         </article>
         <article class="projectCard">
@@ -115,7 +136,7 @@
               <li class="textWhite">Bootstrap</li>
               <li class="textWhite">Ruby</li>
             </ul>
-            <button class="projectButton">See project</button>
+            <button class="projectButton open">See project</button>
           </div>
         </article>
         <article class="projectCard">
@@ -130,7 +151,7 @@
               <li class="textWhite">Bootstrap</li>
               <li class="textWhite">Ruby</li>
             </ul>
-            <button class="projectButton">See project</button>
+            <button class="projectButton open">See project</button>
           </div>
         </article>
         <article class="projectCard">
@@ -145,7 +166,7 @@
               <li class="textWhite">Bootstrap</li>
               <li class="textWhite">Ruby</li>
             </ul>
-            <button class="projectButton">See project</button>
+            <button class="projectButton open">See project</button>
           </div>
         </article>
         <article class="projectCard">
@@ -160,7 +181,7 @@
               <li class="textWhite">Bootstrap</li>
               <li class="textWhite">Ruby</li>
             </ul>
-            <button class="projectButton">See project</button>
+            <button class="projectButton open">See project</button>
           </div>
         </article>
         <article class="projectCard">
@@ -175,13 +196,13 @@
               <li class="textWhite">Bootstrap</li>
               <li class="textWhite">Ruby</li>
             </ul>
-            <button class="projectButton">See project</button>
+            <button class="projectButton open">See project</button>
           </div>
-        </article>
+        </article> -->
 
       </div>
     </section>
-
+<!-- AboutMyself -->
     <section id="AboutMyself">
       <h2>About me</h2>
       <p>Hello I’m a software developer! I can help you build a product ,
@@ -220,14 +241,17 @@
           </li>
          </ul>
     </section>
-
+<!-- ContactForm -->
     <section id="ContactForm">
       <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-      <form action="https://formspree.io/f/mwkjdrqv" method="POST">
+      <form class="form" id="form" action="https://formspree.io/f/mwkjdrqv" method="POST">
         <input class="styleForm" name="name" type="text" id="fname" placeholder="Full name" required maxlength="30">
         <input class="styleForm" name="email" type="email" id="email" placeholder="Email address" required>
         <textarea type="text" id="message" name="message" placeholder="Write me something..." required maxlength="500"></textarea>
-        <button class="projectButton">Get in touch</button>
+        <div class="formControl">
+         <small>Error: email most be in lower case</small>
+         <button class="projectButton">Get in touch</button>
+        </div>
       </form> 
     </section>
 

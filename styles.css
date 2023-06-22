@@ -57,14 +57,61 @@ header {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  transition: transform 200ms linear;
+}
+
+#hamburgerContainer:hover {
+  transform: rotate(90deg);
+}
+
+#close img {
+  position: fixed;
+  top: 60px;
+  right: 35px;
+  color: #dbd8d7;
+  transition: none;
+  transform: none;
+}
+
+.modaltitle {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  width: 259px;
+  height: 82px;
+}
+
+#modalTecnologies {
+  padding-top: 11px;
+}
+
+.modalContainer {
+  height: 100%;
+  z-index: 101;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  padding: 60px 16px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.modal {
+  background-color: #fff;
+  max-width: 100%;
+  padding: 16px;
 }
 
 .hidden {
   display: none;
-}
-
-.show {
-  display: block;
 }
 
 h1 {
@@ -460,6 +507,10 @@ footer > .socialMedia {
   display: none;
 }
 
+#snapshoot {
+  width: 100%;
+}
+
 #imgWorks1 img {
   width: 100%;
 }
@@ -501,6 +552,25 @@ footer > .socialMedia {
   position: fixed;
   top: 35px;
   right: 35px;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.formControl small {
+  visibility: hidden;
+  color: red;
+}
+
+.error small {
+  visibility: visible;
+}
+
+.formControl {
+  display: grid;
+  justify-content: center;
 }
 
 @keyframes mover {
@@ -737,6 +807,10 @@ footer > .socialMedia {
 
   .projectCard:hover .cardContent {
     background: none;
+  }
+
+  .formControl {
+    justify-content: start;
   }
 }
 
