@@ -170,3 +170,28 @@ closex.addEventListener('click', () => {
   modalContainer.classList.remove('show');
   body.classList.remove('blockScroll');
 });
+
+// validation email
+
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const formControl = document.querySelector('.formControl');
+
+function checkInputs() {
+  const emailValue = email.value.trim();
+
+  if (emailValue !== emailValue.toLowerCase()) {
+    formControl.classList.add('error');
+    return false;
+  }
+  formControl.classList.remove('error');
+  return true;
+}
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const isValid = checkInputs();
+  if (isValid) {
+    form.submit();
+  }
+});
