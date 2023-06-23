@@ -219,10 +219,22 @@ function getLocalStorage() {
 
 function saveLocalStorage() {
 
-let formData = {
+  let formData = {
   name: fname.value ,
-  email: email.value,
-  message: message.value,
-};
-
+      email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem( "formData", JSON.stringify( formData ));
 }
+
+saveLocalStorage();
+
+fname.addEventListener("change", () => {
+ saveLocalStorage();
+})
+email.addEventListener("change", () => {
+  saveLocalStorage();
+})
+message.addEventListener("change", () => {
+  saveLocalStorage();
+})
