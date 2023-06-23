@@ -194,3 +194,30 @@ form.addEventListener("submit", (e) => {
 });
 
 //  local storage
+
+const fname = document.querySelector("#fname");
+const message = document.querySelector("#message");
+
+getLocalStorage();
+
+function getLocalStorage() {
+
+  if(localStorage.getItem("formData")){
+    // exist the name in local storage
+
+    let formData =  JSON.parse(localStorage.getItem("formData"));
+    fname.value = formData.name
+    email.value = formData.email
+    message.value = formData.message
+  }
+}
+
+function saveLocalStorage() {
+
+let formData = {
+  name: fname.value ,
+  email: email.value,
+  message: message.value,
+};
+
+}
