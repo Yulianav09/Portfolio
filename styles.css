@@ -7,10 +7,6 @@
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
 body {
   background-color: #1c1a19;
 }
@@ -88,10 +84,6 @@ header {
   justify-content: space-between;
 }
 
-#modalTecnologies {
-  margin-top: 42px;
-}
-
 .modaltitle {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -129,8 +121,9 @@ header {
 #modalContent {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 24px;
   align-content: space-between;
+  justify-content: center;
 }
 
 .hidden {
@@ -284,6 +277,11 @@ footer > hr {
   line-height: 20px;
 }
 
+#modalTecnologies {
+  margin-top: 42px;
+  gap: 8px;
+}
+
 .projectButton {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -296,6 +294,7 @@ footer > hr {
   background: #ff6b00;
   border: none;
   transition: all 0.7s;
+  text-decoration: none;
 }
 
 form > .projectButton {
@@ -596,6 +595,7 @@ footer > .socialMedia {
 .icons {
   display: flex;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 @keyframes mover {
@@ -624,6 +624,7 @@ footer > .socialMedia {
   .modal {
     grid-template-columns: repeat(10, 1fr);
     column-gap: 25px;
+    padding: 24px;
   }
 
   #modalHeading {
@@ -642,6 +643,8 @@ footer > .socialMedia {
 
   #modalContent {
     grid-column: 7 /span 4;
+    gap: 12px;
+    justify-content: flex-start;
   }
 
   .projectCard {

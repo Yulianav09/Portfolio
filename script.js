@@ -171,24 +171,29 @@ closex.addEventListener('click', () => {
   body.classList.remove('blockScroll');
 });
 
-// validation
+// validation email
 
-const form = document.getElementById("form");
-const email = document.getElementById("email");
-const formControl = document.querySelector(".formControl");
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const formControl = document.querySelector('.formControl');
 
 function checkInputs() {
-const emailValue = email.value.trim();
+  const emailValue = email.value.trim();
 
-
-if (emailValue !== emailValue.toLowerCase()) {
+  if (emailValue !== emailValue.toLowerCase()) {
     formControl.classList.add('error');
-  } else{
-    formControl.classList.remove('error');
+    return false;
   }
+  formControl.classList.remove('error');
+  return true;
 }
-form.addEventListener("submit", (e) => {
+
+form.addEventListener('submit', (e) => {
   e.preventDefault();
+  const isValid = checkInputs();
+  if (isValid) {
+    form.submit();
+  }
 });
 
 //  local storage
