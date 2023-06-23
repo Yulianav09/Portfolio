@@ -195,3 +195,40 @@ form.addEventListener('submit', (e) => {
     form.submit();
   }
 });
+
+//  local storage
+
+const fname = document.querySelector('#fname');
+const message = document.querySelector('#message');
+
+function getLocalStorage() {
+  if (localStorage.getItem('formData')) {
+    // exist the name in local storage
+
+    const formData = JSON.parse(localStorage.getItem('formData'));
+    fname.value = formData.name;
+    email.value = formData.email;
+    message.value = formData.message;
+  }
+}
+
+function saveLocalStorage() {
+  const formData = {
+    name: fname.value,
+    email: email.value,
+    message: message.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+
+fname.addEventListener('change', () => {
+  saveLocalStorage();
+});
+email.addEventListener('change', () => {
+  saveLocalStorage();
+});
+message.addEventListener('change', () => {
+  saveLocalStorage();
+});
+
+getLocalStorage();
