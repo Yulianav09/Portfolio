@@ -183,14 +183,19 @@ const emailValue = email.value.trim();
 
 if (emailValue !== emailValue.toLowerCase()) {
     formControl.classList.add('error');
+    return false 
   } else{
     formControl.classList.remove('error');
+    return true
   }
 }
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  checkInputs();
+  const isValid = checkInputs();
+  if (isValid) {
+    form.submit();
+  }
 });
 
 //  local storage
