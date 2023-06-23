@@ -187,7 +187,6 @@ if (emailValue !== emailValue.toLowerCase()) {
     formControl.classList.remove('error');
   }
 }
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 });
