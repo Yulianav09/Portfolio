@@ -198,41 +198,37 @@ form.addEventListener('submit', (e) => {
 
 //  local storage
 
-const fname = document.querySelector("#fname");
-const message = document.querySelector("#message");
-
-getLocalStorage();
+const fname = document.querySelector('#fname');
+const message = document.querySelector('#message');
 
 function getLocalStorage() {
-
-  if(localStorage.getItem("formData")){
+  if (localStorage.getItem('formData')) {
     // exist the name in local storage
 
-    let formData =  JSON.parse(localStorage.getItem("formData"));
-    fname.value = formData.name
-    email.value = formData.email
-    message.value = formData.message
+    const formData = JSON.parse(localStorage.getItem('formData'));
+    fname.value = formData.name;
+    email.value = formData.email;
+    message.value = formData.message;
   }
 }
 
 function saveLocalStorage() {
-
-  let formData = {
-  name: fname.value ,
-      email: email.value,
+  const formData = {
+    name: fname.value,
+    email: email.value,
     message: message.value,
   };
-  localStorage.setItem( "formData", JSON.stringify( formData ));
+  localStorage.setItem('formData', JSON.stringify(formData));
 }
 
-saveLocalStorage();
+fname.addEventListener('change', () => {
+  saveLocalStorage();
+});
+email.addEventListener('change', () => {
+  saveLocalStorage();
+});
+message.addEventListener('change', () => {
+  saveLocalStorage();
+});
 
-fname.addEventListener("change", () => {
- saveLocalStorage();
-})
-email.addEventListener("change", () => {
-  saveLocalStorage();
-})
-message.addEventListener("change", () => {
-  saveLocalStorage();
-})
+getLocalStorage();
