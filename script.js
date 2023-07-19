@@ -2,11 +2,11 @@
 const projects = [
   {
     name: 'Proyect 1',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique pariatur iste suscipit nesciunt aut obcaecati numquam?',
-    featureImage: './src/Mask Group img.svg',
-    tecnologies: ['HTML', 'Bootstrap', 'ruby'],
-    liveDemo: 'https://yulianav09.github.io/Portfolio/',
-    projectURL: 'https://github.com/Yulianav09/Portfolio',
+    description: '"Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list.',
+    featureImage: './src/Awesome book.png',
+    tecnologies: ['HTML', 'CSS', 'JavaScript'],
+    liveDemo: 'https://yulianav09.github.io/Awesome-books/',
+    projectURL: 'https://github.com/Yulianav09/Awesome-books-ES6',
   },
   {
     name: 'Proyect 2',
