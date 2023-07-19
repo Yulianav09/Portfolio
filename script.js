@@ -1,7 +1,7 @@
 /* PopUp Window */
 const projects = [
   {
-    name: 'Proyect 1',
+    name: 'Awesome books',
     description: '"Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list.',
     featureImage: './src/Awesome book.png',
     tecnologies: ['HTML', 'CSS', 'JavaScript'],
